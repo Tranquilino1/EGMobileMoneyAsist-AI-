@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════
-// EG MobileMoney Asist – Landing Page JavaScript
+// EG Mobile Money Assist – Landing Page JavaScript
 // ═══════════════════════════════════════════════
 
 let APK_URL = "https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/releases/latest/download/EG_MobileMoney_Asist.apk";
@@ -271,5 +271,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // ── Track download button click ──
 document.getElementById('btn-download-apk')?.addEventListener('click', () => {
-  console.log('[EG MobileMoney] APK download initiated');
+  console.log('[EG Mobile Money Assist] APK download initiated');
 });

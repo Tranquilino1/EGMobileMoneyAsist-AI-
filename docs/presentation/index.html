@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EG Mobile Money Assist - Presentación Interactiva</title>
+  <meta name="description" content="Presentación interactiva sobre EG Mobile Money Assist. Conoce su arquitectura, flujo de IA con Gemini 1.5 Flash y stack de desarrollo.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ── PROGRESS BAR ── -->
+  <div class="progress-bar-container">
+    <div class="progress-bar-fill" id="progressBar"></div>
+  </div>
+
+  <!-- ── BACKGROUND EFFECT ── -->
+  <div class="bg-grid"></div>
+  <div class="orb orb-emerald"></div>
+  <div class="orb orb-cyan"></div>
+
+  <!-- ── HEADER & BRANDING ── -->
+  <header class="deck-header">
+    <div class="deck-logo">
+      <div class="logo-icon">EG</div>
+      <span class="logo-text">EG Mobile Money <span>Assist</span></span>
+    </div>
+    <div class="deck-author">Autor: Tranquilino</div>
+  </header>
+
+  <!-- ── PRESENTATION DECK ── -->
+  <main class="deck-container">
+
+    <!-- Diapositiva 1: Portada -->
+    <section class="slide slide-cover active" id="slide-1">
+      <div class="cover-badge">Ecosistema Android + Inteligencia Artificial</div>
+      <h1 class="cover-title">EG Mobile Money <span class="gradient-text-green">Assist</span></h1>
+      <p class="cover-subtitle">Tu asistente de finanzas personales potenciado por Gemini AI, con registro de transacciones por voz y diseño offline-first.</p>
+      
+      <div class="cover-meta">
+        <div class="meta-item">
+          <span class="meta-label">Desarrollador</span>
+          <span class="meta-value">Tranquilino</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Licencia</span>
+          <span class="meta-value">Apache 2.0 (Open Source)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Motor de IA</span>
+          <span class="meta-value">Gemini 1.5 Flash</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 2: El Desafío Financiero -->
+    <section class="slide" id="slide-2">
+      <div class="slide-top">
+        <span class="slide-tag">El Problema</span>
+        <h2 class="slide-title">¿Por qué fallan las apps de finanzas?</h2>
+      </div>
+      <div class="slide-body">
+        <div class="content-left">
+          <p class="description-text">La mayoría de las personas abandonan el registro de sus gastos diarios debido a la fricción de entrada y la complejidad de las interfaces:</p>
+          <ul class="bullet-list">
+            <li>
+              <span class="bullet-icon">✕</span>
+              <div>
+                <strong>Entrada de datos lenta y engorrosa</strong>
+                <p>Escribir montos, categorías, cuentas y notas en teclados táctiles pequeños toma demasiado tiempo.</p>
+              </div>
+            </li>
+            <li>
+              <span class="bullet-icon">✕</span>
+              <div>
+                <strong>Pérdida de la privacidad financiera</strong>
+                <p>Las aplicaciones en la nube analizan, guardan y a veces monetizan los datos de compras y saldos del usuario.</p>
+              </div>
+            </li>
+            <li>
+              <span class="bullet-icon">✕</span>
+              <div>
+                <strong>Falta de automatización</strong>
+                <p>Pocas herramientas entienden el contexto semántico de un gasto sin que el usuario configure reglas manuales complejas.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="content-right">
+          <div class="glass-card" style="text-align: center; max-width: 320px;">
+            <span style="font-size: 3rem;">📉</span>
+            <h4 style="margin-top: 15px; margin-bottom: 8px;">El 80% abandona</h4>
+            <p style="font-size: 0.85rem; color: var(--text-gray);">el control de presupuestos en la primera semana debido a la tediosa captura manual.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 3: La Solución Inteligente -->
+    <section class="slide" id="slide-3">
+      <div class="slide-top">
+        <span class="slide-tag">La Solución</span>
+        <h2 class="slide-title">Hablar de forma natural y registrar al instante</h2>
+      </div>
+      <div class="slide-body">
+        <div class="content-left">
+          <p class="description-text">EG Mobile Money Assist combina la inmediatez de la voz con la categorización inteligente de Gemini AI:</p>
+          <ul class="bullet-list">
+            <li>
+              <span class="bullet-icon">✓</span>
+              <div>
+                <strong>Cero Fricción con Registro por Voz</strong>
+                <p>Solo mantén pulsado el botón y di: <em>"Gasté 45 dólares en la cena con amigos"</em>.</p>
+              </div>
+            </li>
+            <li>
+              <span class="bullet-icon">✓</span>
+              <div>
+                <strong>Extracción Semántica Avanzada</strong>
+                <p>Gemini 1.5 Flash detecta automáticamente el tipo (Gasto), el monto ($45.00), la divisa (USD) y la categoría (Comida).</p>
+              </div>
+            </li>
+            <li>
+              <span class="bullet-icon">✓</span>
+              <div>
+                <strong>Control Offline Completo</strong>
+                <p>La base de datos es local. Tú controlas tu clave de API de Gemini y tus finanzas se quedan en tu dispositivo.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="content-right">
+          <div class="phone-preview">
+            <div class="phone-screen-header">
+              <span>08:45</span>
+              <span>🔋 95%</span>
+            </div>
+            <div class="phone-card">
+              <span class="phone-balance-lbl">Balance Total</span>
+              <div class="phone-balance-val">$4,280.50</div>
+            </div>
+            <div class="phone-tx-list">
+              <div class="phone-tx-item">
+                <span>🛒 Supermercado</span>
+                <span style="color: #ef4444; font-weight: bold;">-$89.20</span>
+              </div>
+              <div class="phone-tx-item">
+                <span>💼 Salario Mensual</span>
+                <span style="color: #10b981; font-weight: bold;">+$3,200</span>
+              </div>
+            </div>
+            <div class="phone-mic-bar">
+              <span>🎙️ Di tu transacción...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 4: Arquitectura del Sistema -->
+    <section class="slide" id="slide-4">
+      <div class="slide-top">
+        <span class="slide-tag">Ingeniería</span>
+        <h2 class="slide-title">Clean Architecture modularizada</h2>
+      </div>
+      <div class="slide-body" style="flex-direction: column; justify-content: center; gap: 30px;">
+        <p class="description-text" style="text-align: center; max-width: 800px; margin-bottom: 0;">
+          La aplicación utiliza un diseño desacoplado que separa la lógica de presentación de las bases de datos y los servicios de red:
+        </p>
+        <div class="arch-grid">
+          <div class="arch-node">
+            <div class="arch-icon">📱</div>
+            <h4>Capa de Presentación</h4>
+            <p>UI declarativa construida en Jetpack Compose. Utiliza ViewModels con StateFlow para mantener la reactividad del estado de forma síncrona.</p>
+          </div>
+          <div class="arch-node">
+            <div class="arch-icon">⚙️</div>
+            <h4>Capa de Dominio</h4>
+            <p>Contiene los casos de uso puros y entidades del negocio. Libre de dependencias externas para garantizar la portabilidad y facilitar test unitarios.</p>
+          </div>
+          <div class="arch-node">
+            <div class="arch-icon">📦</div>
+            <h4>Capa de Datos</h4>
+            <p>Gestiona Room DB (SQLite local), Ktor client para comunicarse directamente con Gemini API y DataStore para configuraciones clave-valor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 5: Simulación Interactiva de Flujo -->
+    <section class="slide" id="slide-5">
+      <div class="slide-top">
+        <span class="slide-tag">Interactividad</span>
+        <h2 class="slide-title">Flujo técnico de la voz a la base de datos</h2>
+      </div>
+      <div class="slide-body" style="flex-direction: column; justify-content: center; gap: 20px;">
+        <div class="simulation-box">
+          <div class="sim-flow">
+            <div class="sim-step" id="step1">
+              🎙️
+              <span>Grabación</span>
+            </div>
+            <div class="sim-arrow">➔</div>
+            <div class="sim-step" id="step2">
+              🌐
+              <span>Gemini API</span>
+            </div>
+            <div class="sim-arrow">➔</div>
+            <div class="sim-step" id="step3">
+              ⚙️
+              <span>Mapeo JSON</span>
+            </div>
+            <div class="sim-arrow">➔</div>
+            <div class="sim-step" id="step4">
+              💾
+              <span>Room DB</span>
+            </div>
+          </div>
+          <div class="sim-desc" id="simDesc">
+            Haz clic en "Iniciar Simulación" para ver el flujo en tiempo real de cómo procesamos tus palabras.
+          </div>
+          <button class="btn-sim" id="btnSimulate">Iniciar Simulación</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 6: Privacidad y Offline-First -->
+    <section class="slide" id="slide-6">
+      <div class="slide-top">
+        <span class="slide-tag">Seguridad</span>
+        <h2 class="slide-title">Privacidad absoluta y control local</h2>
+      </div>
+      <div class="slide-body">
+        <div class="content-left">
+          <p class="description-text">EG Mobile Money Assist pone el control de los datos en manos del usuario, eliminando servidores intermediarios:</p>
+          <ul class="bullet-list">
+            <li>
+              <span class="bullet-icon">🔒</span>
+              <div>
+                <strong>Tus Claves, Tus Datos</strong>
+                <p>Configura tu clave de Gemini API localmente. Se almacena de forma encriptada en el almacenamiento seguro de Android.</p>
+              </div>
+            </li>
+            <li>
+              <span class="bullet-icon">🔒</span>
+              <div>
+                <strong>Almacenamiento Local Offline-First</strong>
+                <p>Las transacciones y saldos se guardan únicamente en tu base de datos SQLite (Room) local. No se requiere cuenta ni inicio de sesión.</p>
+              </div>
+            </li>
+            <li>
+              <span class="bullet-icon">🔒</span>
+              <div>
+                <strong>Exportación libre</strong>
+                <p>Exporta tu base de datos Room completa a formato CSV o haz copias de seguridad locales en un solo toque.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="content-right">
+          <div class="glass-card" style="border-color: rgba(6, 182, 212, 0.3); max-width: 320px;">
+            <h4 style="color: var(--accent-cyan); margin-bottom: 10px;">Offline-First</h4>
+            <p style="font-size: 0.85rem; color: var(--text-gray); line-height: 1.5;">La aplicación funciona perfectamente sin internet para consultas ordinarias, requiriendo red únicamente para la llamada API a Gemini.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 7: Stack Tecnológico -->
+    <section class="slide" id="slide-7">
+      <div class="slide-top">
+        <span class="slide-tag">Tecnología</span>
+        <h2 class="slide-title">Estructura moderna de Android</h2>
+      </div>
+      <div class="slide-body" style="flex-direction: column; justify-content: center;">
+        <div class="tech-grid">
+          <div class="tech-tag"><span class="tech-icon-small">💜</span><span>Kotlin (100%)</span></div>
+          <div class="tech-tag"><span class="tech-icon-small">🎨</span><span>Jetpack Compose</span></div>
+          <div class="tech-tag"><span class="tech-icon-small">🧠</span><span>Gemini 1.5 Flash API</span></div>
+          <div class="tech-tag"><span class="tech-icon-small">💾</span><span>Room SQLite DB</span></div>
+          <div class="tech-tag"><span class="tech-icon-small">💉</span><span>Hilt Dependency Injection</span></div>
+          <div class="tech-tag"><span class="tech-icon-small">🌐</span><span>Ktor HTTP Client</span></div>
+          <div class="tech-tag"><span class="tech-icon-small">🧵</span><span>Kotlin Coroutines + Flow</span></div>
+          <div class="tech-tag"><span class="tech-icon-small">📁</span><span>Preferences DataStore</span></div>
+          <div class="tech-tag"><span class="tech-icon-small">📊</span><span>Material 3 Components</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 8: Descarga y Código Abierto -->
+    <section class="slide" id="slide-8">
+      <div class="slide-top">
+        <span class="slide-tag">Lanzamiento</span>
+        <h2 class="slide-title">Descarga directa y código fuente</h2>
+      </div>
+      <div class="slide-body">
+        <div class="dl-deck-wrapper">
+          <div class="dl-text-col">
+            <p class="description-text" style="margin-bottom: 16px;">EG Mobile Money Assist está listo para usarse. Puedes descargar el APK o explorar el código fuente en GitHub:</p>
+            <ul class="bullet-list" style="margin-bottom: 24px;">
+              <li><span class="bullet-icon">★</span> 100% gratuito y libre de anuncios.</li>
+              <li><span class="bullet-icon">★</span> Contribuye al repositorio reportando issues o subiendo código.</li>
+            </ul>
+            <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/releases/latest/download/EG_MobileMoney_Asist.apk" class="dl-btn" id="ppt-download-btn">
+              📥 Descargar APK (v1.0.0)
+            </a>
+          </div>
+          <div class="dl-qr-col">
+            <div class="ppt-qr-card">
+              <div id="ppt-qr-container">
+                <!-- QR Image loaded via js or fallback -->
+              </div>
+              <div class="ppt-qr-lbl">Escanea para descargar</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── CONTROLS & BOTTOM BAR ── -->
+  <footer class="deck-footer">
+    <div class="instructions-hint">
+      Navegación: Usa las flechas <span class="key-cap">←</span> <span class="key-cap">→</span> o haz clic en los botones.
+    </div>
+    
+    <div class="deck-navigation">
+      <button class="nav-btn" id="btnPrev" disabled>←</button>
+      <span class="slide-counter" id="slideCounter">1 / 8</span>
+      <button class="nav-btn" id="btnNext">→</button>
+    </div>
+  </footer>
+
+  <!-- ── JS NAVIGATION LOGIC ── -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const slides = document.querySelectorAll('.slide');
+      const btnPrev = document.getElementById('btnPrev');
+      const btnNext = document.getElementById('btnNext');
+      const slideCounter = document.getElementById('slideCounter');
+      const progressBar = document.getElementById('progressBar');
+      
+      let currentSlideIndex = 0;
+      const totalSlides = slides.length;
+
+      // Update Slides Presentation State
+      function updateDeck() {
+        slides.forEach((slide, index) => {
+          slide.classList.remove('active', 'prev', 'next');
+          if (index === currentSlideIndex) {
+            slide.classList.add('active');
+          } else if (index < currentSlideIndex) {
+            slide.classList.add('prev');
+          } else {
+            slide.classList.add('next');
+          }
+        });
+
+        // Update Controls & Counter
+        btnPrev.disabled = currentSlideIndex === 0;
+        btnNext.disabled = currentSlideIndex === totalSlides - 1;
+        slideCounter.textContent = `${currentSlideIndex + 1} / ${totalSlides}`;
+        
+        // Progress Bar Width
+        const progressPercent = ((currentSlideIndex) / (totalSlides - 1)) * 100;
+        progressBar.style.width = `${progressPercent}%`;
+      }
+
+      // Slide Navigation Actions
+      function nextSlide() {
+        if (currentSlideIndex < totalSlides - 1) {
+          currentSlideIndex++;
+          updateDeck();
+        }
+      }
+
+      function prevSlide() {
+        if (currentSlideIndex > 0) {
+          currentSlideIndex--;
+          updateDeck();
+        }
+      }
+
+      btnNext.addEventListener('click', nextSlide);
+      btnPrev.addEventListener('click', prevSlide);
+
+      // Keyboard support
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          nextSlide();
+        } else if (e.key === 'ArrowLeft') {
+          prevSlide();
+        }
+      });
+
+      // Swipe support for mobile screens
+      let touchStartX = 0;
+      let touchEndX = 0;
+      
+      document.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+      }, { passive: true });
+
+      document.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+      }, { passive: true });
+
+      function handleSwipe() {
+        const threshold = 50;
+        if (touchStartX - touchEndX > threshold) {
+          nextSlide(); // swipe left -> next slide
+        } else if (touchEndX - touchStartX > threshold) {
+          prevSlide(); // swipe right -> prev slide
+        }
+      }
+
+      // ── INTERACTIVE FLOW SIMULATION (Slide 5) ──
+      const btnSimulate = document.getElementById('btnSimulate');
+      const steps = [
+        document.getElementById('step1'),
+        document.getElementById('step2'),
+        document.getElementById('step3'),
+        document.getElementById('step4')
+      ];
+      const simDesc = document.getElementById('simDesc');
+
+      const simPhrases = [
+        "El usuario habla: \"Gasté 45 dólares en la cena con amigos\". AudioRecord procesa y guarda el audio localmente.",
+        "Se envía el archivo de audio directamente al endpoint de la API Gemini 1.5 Flash utilizando el cliente seguro Ktor.",
+        "Gemini procesa la semántica del audio y genera una respuesta estructurada en formato JSON (monto, tipo, categoría).",
+        "La app parsea el JSON e inserta la transacción instantáneamente en la base de datos local Room de SQLite. ¡Registrado!"
+      ];
+
+      let simInterval = null;
+      let activeStepIndex = 0;
+
+      function startSimulation() {
+        btnSimulate.disabled = true;
+        btnSimulate.textContent = "Simulando...";
+        
+        // Reset steps
+        steps.forEach(step => step.classList.remove('active-step'));
+        activeStepIndex = 0;
+        
+        // Step 1 active immediately
+        steps[0].classList.add('active-step');
+        simDesc.textContent = simPhrases[0];
+
+        if (simInterval) clearInterval(simInterval);
+
+        simInterval = setInterval(() => {
+          steps[activeStepIndex].classList.remove('active-step');
+          activeStepIndex++;
+          
+          if (activeStepIndex < steps.length) {
+            steps[activeStepIndex].classList.add('active-step');
+            simDesc.textContent = simPhrases[activeStepIndex];
+          } else {
+            clearInterval(simInterval);
+            simDesc.textContent = "🎉 Simulación completada con éxito. El registro de voz a base de datos tardó menos de 1.5 segundos.";
+            btnSimulate.disabled = false;
+            btnSimulate.textContent = "Iniciar Simulación";
+          }
+        }, 2500);
+      }
+
+      btnSimulate.addEventListener('click', startSimulation);
+
+      // ── QR Fallback Setup ──
+      const qrContainer = document.getElementById('ppt-qr-container');
+      if (qrContainer) {
+        let qrURL = "https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/releases/latest/download/EG_MobileMoney_Asist.apk";
+        if (window.location.hostname.includes("github.io")) {
+          const pathParts = window.location.pathname.split('/');
+          pathParts[pathParts.length - 1] = "docs/landing/EG_MobileMoney_Asist.apk";
+          qrURL = window.location.origin + pathParts.join('/');
+        }
+        
+        const qrImg = document.createElement('img');
+        qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=140x140&data=${encodeURIComponent(qrURL)}&bgcolor=ffffff&color=0a1628&margin=5`;
+        qrImg.alt = "Descargar APK QR";
+        qrContainer.appendChild(qrImg);
+      }
+    });
+  </script>
+</body>
+</html>

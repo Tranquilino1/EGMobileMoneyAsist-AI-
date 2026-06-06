@@ -1,6 +1,6 @@
 <div align="center">
 
-# 💸 EG MobileMoney Asist
+# 💸 EG Mobile Money Assist
 
 ### Tu asistente de finanzas personales potenciado por Inteligencia Artificial
 
@@ -12,11 +12,11 @@
 
 <br/>
 
-**EG MobileMoney Asist** es una app Android de código abierto para la gestión de finanzas personales, potenciada por **inteligencia artificial (Gemini 1.5 Flash)** que permite registrar transacciones por voz, analizar patrones de gasto y tomar el control total de tu dinero.
+**EG Mobile Money Assist** es una app Android de código abierto para la gestión de finanzas personales, potenciada por **inteligencia artificial (Gemini 1.5 Flash)** que permite registrar transacciones por voz, analizar patrones de gasto y tomar el control total de tu dinero.
 
 <br/>
 
-[📲 Descargar APK](https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/releases/latest) · [🌐 Landing Page](https://tranquilino1.github.io/EGMobileMoneyAsist-AI-/) · [🐛 Reportar Bug](https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/issues) · [💡 Solicitar Feature](https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/issues)
+[📲 Descargar APK](https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/releases/latest) · [🌐 Landing Page](https://tranquilino1.github.io/EGMobileMoneyAsist-AI-/) · [📊 PPT Interactiva](docs/presentation/index.html) · [📖 Doc. Técnica](docs/TECHNICAL_DOCUMENTATION.md) · [🐛 Reportar Bug](https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/issues)
 
 </div>
 
@@ -168,7 +168,7 @@ EGMobileMoneyAsist-AI-/
 ## 📄 Licencia
 
 ```
-Copyright 2024 EG MobileMoney Asist
+Copyright 2026 EG Mobile Money Assist
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
