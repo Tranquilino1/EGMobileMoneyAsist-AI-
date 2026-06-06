@@ -99,8 +99,8 @@ La característica distintiva de **EG Mobile Money Assist** es su motor de proce
 3. **Inferencia y Análisis**: Gemini procesa el audio, extrae la intención semántica y genera un objeto **JSON estructurado** bajo un esquema riguroso:
    ```json
    {
-     "amount": 45.00,
-     "currency": "USD",
+     "amount": 5000,
+     "currency": "XAF",
      "category": "Alimentación",
      "type": "EXPENSE",
      "description": "Supermercado"

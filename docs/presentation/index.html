@@ -110,14 +110,14 @@
               <span class="bullet-icon">✓</span>
               <div>
                 <strong>Cero Fricción con Registro por Voz</strong>
-                <p>Solo mantén pulsado el botón y di: <em>"Gasté 45 dólares en la cena con amigos"</em>.</p>
+                <p>Solo mantén pulsado el botón y di: <em>"Gasté 5000 XAF en la cena con amigos"</em>.</p>
               </div>
             </li>
             <li>
               <span class="bullet-icon">✓</span>
               <div>
                 <strong>Extracción Semántica Avanzada</strong>
-                <p>Gemini 1.5 Flash detecta automáticamente el tipo (Gasto), el monto ($45.00), la divisa (USD) y la categoría (Comida).</p>
+                <p>Gemini 1.5 Flash detecta automáticamente el tipo (Gasto), el monto (5000), la divisa (XAF) y la categoría (Comida).</p>
               </div>
             </li>
             <li>
@@ -137,16 +137,16 @@
             </div>
             <div class="phone-card">
               <span class="phone-balance-lbl">Balance Total</span>
-              <div class="phone-balance-val">$4,280.50</div>
+              <div class="phone-balance-val">120,500 XAF</div>
             </div>
             <div class="phone-tx-list">
               <div class="phone-tx-item">
                 <span>🛒 Supermercado</span>
-                <span style="color: #ef4444; font-weight: bold;">-$89.20</span>
+                <span style="color: #ef4444; font-weight: bold;">-5,000 XAF</span>
               </div>
               <div class="phone-tx-item">
                 <span>💼 Salario Mensual</span>
-                <span style="color: #10b981; font-weight: bold;">+$3,200</span>
+                <span style="color: #10b981; font-weight: bold;">+250,000 XAF</span>
               </div>
             </div>
             <div class="phone-mic-bar">
@@ -427,7 +427,7 @@
       const simDesc = document.getElementById('simDesc');
 
       const simPhrases = [
-        "El usuario habla: \"Gasté 45 dólares en la cena con amigos\". AudioRecord procesa y guarda el audio localmente.",
+        "El usuario habla: \"Gasté 5000 XAF en la cena con amigos\". AudioRecord procesa y guarda el audio localmente.",
         "Se envía el archivo de audio directamente al endpoint de la API Gemini 1.5 Flash utilizando el cliente seguro Ktor.",
         "Gemini procesa la semántica del audio y genera una respuesta estructurada en formato JSON (monto, tipo, categoría).",
         "La app parsea el JSON e inserta la transacción instantáneamente en la base de datos local Room de SQLite. ¡Registrado!"

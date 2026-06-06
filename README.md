@@ -14,8 +14,10 @@
 
 **EG Mobile Money Assist** es una app Android de código abierto para la gestión de finanzas personales, potenciada por **inteligencia artificial (Gemini 1.5 Flash)** que permite registrar transacciones por voz, analizar patrones de gasto y tomar el control total de tu dinero.
 
+🌐 **Landing Page Oficial:** [https://tranquilino1.github.io/EGMobileMoneyAsist-AI-/](https://tranquilino1.github.io/EGMobileMoneyAsist-AI-/)
+ 
 <br/>
-
+ 
 [📲 Descargar APK](https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/releases/latest) · [🌐 Landing Page](https://tranquilino1.github.io/EGMobileMoneyAsist-AI-/) · [📊 PPT Interactiva](docs/presentation/index.html) · [📖 Doc. Técnica](docs/TECHNICAL_DOCUMENTATION.md) · [🐛 Reportar Bug](https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/issues)
 
 </div>
@@ -159,9 +161,9 @@ EGMobileMoneyAsist-AI-/
 ```
 
 **Ejemplo de uso:**
-> 🎙️ _"Gasté cuarenta y cinco dólares en el supermercado"_
+> 🎙️ _"Gasté cinco mil francos en el supermercado"_
 >
-> ✅ La IA registra: **-$45.00** · Categoría: **Alimentación** · Cuenta: **Principal**
+> ✅ La IA registra: **-5000 XAF** · Categoría: **Alimentación** · Cuenta: **Principal**
 
 ---
 
