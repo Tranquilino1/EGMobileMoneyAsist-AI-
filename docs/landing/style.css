@@ -296,7 +296,14 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.2; }
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-12px); }
 }
-.phone-screen { padding: 0; background: #0a1628; }
+.phone-screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 541 / 966;
+  background: #0a1628;
+  overflow: hidden;
+  border-radius: 36px;
+}
 .app-demo { display: flex; flex-direction: column; min-height: 560px; }
 .app-topbar {
   display: flex;
@@ -894,11 +901,19 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.2; }
 }
 
 /* ── LOGOS AND IMAGE SLIDER IMPROVEMENTS ── */
+.nav-logo-icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 .nav-logo-img {
-  height: 36px;
-  width: 36px;
+  height: 32px;
+  width: 32px;
   object-fit: contain;
-  border-radius: 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2px;
 }
 .badge-logo {
   height: 18px;
