@@ -1,0 +1,14 @@
+plugins {
+    id("ivy.feature")
+}
+
+android {
+    namespace = "com.ivy.ui"
+}
+
+dependencies {
+    implementation(projects.shared.base)
+    implementation(projects.shared.domain)
+    implementation(libs.appcompat.activity)
+    implementation(libs.material)
+}

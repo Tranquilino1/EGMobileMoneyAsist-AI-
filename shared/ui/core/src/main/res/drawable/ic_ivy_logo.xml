@@ -1,0 +1,82 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="128dp"
+    android:height="102dp"
+    android:viewportWidth="128"
+    android:viewportHeight="102">
+    <!-- EG MobileMoney Asist Logo - Mobile + Currency -->
+    
+    <!-- Phone body -->
+    <path
+        android:pathData="M42,6h44c4.42,0 8,3.58 8,8v74c0,4.42 -3.58,8 -8,8h-44c-4.42,0 -8,-3.58 -8,-8v-74c0,-4.42 3.58,-8 8,-8z"
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="3"
+        android:strokeColor="#10B981"/>
+    
+    <!-- Screen -->
+    <path
+        android:pathData="M38,18h52v60h-52z"
+        android:fillColor="#10B981"
+        android:fillAlpha="0.12"/>
+    
+    <!-- Dollar sign vertical bar -->
+    <path
+        android:pathData="M63,24v54"
+        android:strokeWidth="4.5"
+        android:strokeColor="#10B981"
+        android:strokeLineCap="round"/>
+    
+    <!-- Dollar sign S-curve top -->
+    <path
+        android:pathData="M76,36c0,-6 -4,-10 -12,-10c-8,0 -13,4 -13,10c0,6 5,9 13,10">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="51"
+                android:startY="26"
+                android:endX="76"
+                android:endY="46"
+                android:type="linear">
+                <item android:offset="0" android:color="#FF34D399"/>
+                <item android:offset="1" android:color="#FF10B981"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Dollar sign S-curve bottom -->
+    <path
+        android:pathData="M51,66c0,6 4,10 12,10c8,0 13,-4 13,-10c0,-6 -5,-9 -13,-10">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:startX="51"
+                android:startY="56"
+                android:endX="76"
+                android:endY="76"
+                android:type="linear">
+                <item android:offset="0" android:color="#FF10B981"/>
+                <item android:offset="1" android:color="#FF059669"/>
+            </gradient>
+        </aapt:attr>
+    </path>
+    
+    <!-- Signal waves -->
+    <path
+        android:pathData="M98,40c4,5 4,12 0,17"
+        android:strokeWidth="3"
+        android:strokeColor="#10B981"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M105,34c7,8 7,21 0,29"
+        android:strokeWidth="2.5"
+        android:strokeColor="#10B981"
+        android:fillAlpha="0.5"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+    
+    <!-- Home indicator -->
+    <path
+        android:pathData="M57,88h14"
+        android:strokeWidth="3"
+        android:strokeColor="#10B981"
+        android:strokeLineCap="round"/>
+</vector>

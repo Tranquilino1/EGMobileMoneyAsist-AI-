@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EG MobileMoney Asist – Gestiona tu dinero con IA</title>
+  <meta name="description" content="EG MobileMoney Asist: la app de finanzas personales potenciada por inteligencia artificial. Registra gastos por voz, analiza tu dinero y toma el control total. Descarga gratuita para Android." />
+  <meta name="keywords" content="EG MobileMoney, finanzas personales, IA, Android, gestión de dinero, app financiera" />
+  <meta property="og:title" content="EG MobileMoney Asist – Tu asistente financiero con IA" />
+  <meta property="og:description" content="Registra transacciones por voz, analiza gastos e ingresos y toma el control de tu dinero. Gratis para Android." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tranquilino1.github.io/EGMobileMoneyAsist-AI-/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <div class="nav-logo-icon">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="url(#logoGrad)"/>
+            <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="13" font-weight="800" font-family="Inter">EG</text>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00E676"/>
+                <stop offset="1" stop-color="#00B248"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <span class="nav-brand-text">EG MobileMoney <span class="nav-brand-accent">Asist</span></span>
+      </div>
+      <div class="nav-links">
+        <a href="#features" id="nav-features">Características</a>
+        <a href="#ai-section" id="nav-ai">IA Integrada</a>
+        <a href="#download" id="nav-download">Descargar</a>
+        <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-" target="_blank" class="nav-github" id="nav-github">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          GitHub
+        </a>
+      </div>
+      <button class="nav-mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══ HERO SECTION ═══ -->
+  <header class="hero" id="home">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orbs">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Disponible en Android · Open Source
+        </div>
+        <h1 class="hero-title">
+          Tu asistente de<br/>
+          <span class="gradient-text">finanzas personales</span><br/>
+          potenciado por <span class="gradient-text-green">IA</span>
+        </h1>
+        <p class="hero-subtitle">
+          Registra transacciones <strong>por voz</strong>, analiza tus gastos con inteligencia artificial 
+          y toma el control total de tu dinero. Gratis, sin suscripciones, siempre.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#download" class="btn-primary" id="hero-cta-download">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h5.66V9h3.84L12 2z"/></svg>
+            Descargar APK
+          </a>
+          <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-" target="_blank" class="btn-secondary" id="hero-cta-github">
+            Ver en GitHub
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M5 12h14m-7-7 7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-value">100%</span>
+            <span class="stat-label">Open Source</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-value">IA</span>
+            <span class="stat-label">Gemini 1.5</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <span class="stat-value">0€</span>
+            <span class="stat-label">Gratis siempre</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="phone-mockup">
+          <div class="phone-frame">
+            <div class="phone-screen">
+              <div class="app-demo">
+                <div class="app-topbar">
+                  <span class="app-greeting">Buenos días 👋</span>
+                  <div class="app-avatar">EG</div>
+                </div>
+                <div class="app-balance-card">
+                  <p class="balance-label">Balance Total</p>
+                  <p class="balance-amount">$4,280.50</p>
+                  <div class="balance-trend">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="#00E676"><path d="m5 12 7-7 7 7"/></svg>
+                    <span>+12.4% este mes</span>
+                  </div>
+                </div>
+                <div class="app-quick-stats">
+                  <div class="quick-stat income">
+                    <div class="qs-icon">↑</div>
+                    <div>
+                      <p class="qs-label">Ingresos</p>
+                      <p class="qs-val">$6,500</p>
+                    </div>
+                  </div>
+                  <div class="quick-stat expense">
+                    <div class="qs-icon">↓</div>
+                    <div>
+                      <p class="qs-label">Gastos</p>
+                      <p class="qs-val">$2,219</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="app-transactions">
+                  <p class="tx-header">Recientes</p>
+                  <div class="tx-item">
+                    <div class="tx-icon food">🍕</div>
+                    <div class="tx-info">
+                      <span class="tx-name">Restaurante</span>
+                      <span class="tx-date">Hoy</span>
+                    </div>
+                    <span class="tx-amount neg">-$24.50</span>
+                  </div>
+                  <div class="tx-item">
+                    <div class="tx-icon salary">💼</div>
+                    <div class="tx-info">
+                      <span class="tx-name">Salario</span>
+                      <span class="tx-date">Ayer</span>
+                    </div>
+                    <span class="tx-amount pos">+$3,200</span>
+                  </div>
+                  <div class="tx-item">
+                    <div class="tx-icon shop">🛒</div>
+                    <div class="tx-info">
+                      <span class="tx-name">Supermercado</span>
+                      <span class="tx-date">Lun</span>
+                    </div>
+                    <span class="tx-amount neg">-$89.20</span>
+                  </div>
+                </div>
+                <!-- Voice AI Button -->
+                <div class="app-voice-btn">
+                  <div class="voice-btn-inner">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="white"><path d="M12 15c1.66 0 3-1.34 3-3V6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3zm5.91-3c-.49 0-.9.36-.98.85C16.52 15.2 14.47 17 12 17s-4.52-1.8-4.93-4.15c-.08-.49-.49-.85-.98-.85-.61 0-1.09.54-1 1.14.49 3 2.89 5.35 5.91 5.78V21c0 .55.45 1 1 1s1-.45 1-1v-2.08c3.02-.43 5.42-2.78 5.91-5.78.1-.6-.39-1.14-1-1.14z"/></svg>
+                  </div>
+                  <span>🎙️ Registrar por voz</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="phone-glow"></div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <div class="scroll-dot"></div>
+    </div>
+  </header>
+
+  <!-- ═══ FEATURES SECTION ═══ -->
+  <section class="features" id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">¿Por qué EG MobileMoney?</span>
+        <h2 class="section-title">Todo lo que necesitas para gestionar tu dinero</h2>
+        <p class="section-subtitle">Una app completa, intuitiva y potenciada por IA para tus finanzas personales</p>
+      </div>
+      <div class="features-grid" id="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15c1.66 0 3-1.34 3-3V6c0-1.66-1.34-3-3-3S9 4.34 9 6v6c0 1.66 1.34 3 3 3zm5.91-3c-.49 0-.9.36-.98.85C16.52 15.2 14.47 17 12 17s-4.52-1.8-4.93-4.15c-.08-.49-.49-.85-.98-.85-.61 0-1.09.54-1 1.14.49 3 2.89 5.35 5.91 5.78V21c0 .55.45 1 1 1s1-.45 1-1v-2.08c3.02-.43 5.42-2.78 5.91-5.78.1-.6-.39-1.14-1-1.14z" fill="currentColor" stroke="none"/></svg>
+          </div>
+          <h3>Registro por Voz</h3>
+          <p>Di "gasté $30 en comida" y la IA lo registra automáticamente. Sin escribir, sin complicaciones.</p>
+        </div>
+        <div class="feature-card feature-card-highlight">
+          <div class="feature-badge">★ Destacado</div>
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </div>
+          <h3>IA con Gemini 1.5</h3>
+          <p>Análisis inteligente de tus patrones de gasto, sugerencias personalizadas y predicciones financieras.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm0 2v14h14V5H5zm7 2a5 5 0 1 1 0 10A5 5 0 0 1 12 7zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg>
+          </div>
+          <h3>Múltiples Monedas</h3>
+          <p>Gestiona cuentas en diferentes monedas con tasas de cambio en tiempo real integradas.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/></svg>
+          </div>
+          <h3>Informes Detallados</h3>
+          <p>Gráficos interactivos, categorías personalizadas y exportación de datos en formato CSV.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 4l5 2.18V11c0 3.5-2.33 6.79-5 7.93-2.67-1.14-5-4.43-5-7.93V7.18L12 5z"/></svg>
+          </div>
+          <h3>100% Privado</h3>
+          <p>Tus datos financieros se guardan localmente. Sin servidores externos, sin tracking, sin anuncios.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+          </div>
+          <h3>Ultra Rápida</h3>
+          <p>Construida con Jetpack Compose y arquitectura moderna para una experiencia fluida y responsive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ AI SECTION ═══ -->
+  <section class="ai-section" id="ai-section">
+    <div class="section-container">
+      <div class="ai-grid">
+        <div class="ai-content">
+          <span class="section-tag">Inteligencia Artificial</span>
+          <h2 class="section-title">Gestión financiera con el poder de <span class="gradient-text-green">Gemini AI</span></h2>
+          <p class="section-subtitle">No solo registras gastos – tu asistente financiero entiende el contexto, aprende tus hábitos y te ayuda a tomar mejores decisiones.</p>
+          <div class="ai-features-list">
+            <div class="ai-feature-item">
+              <div class="ai-check">✓</div>
+              <div>
+                <strong>Procesamiento de voz natural</strong>
+                <p>Habla como hablarías a una persona. "Pagué el alquiler de este mes, $800"</p>
+              </div>
+            </div>
+            <div class="ai-feature-item">
+              <div class="ai-check">✓</div>
+              <div>
+                <strong>Categorización automática</strong>
+                <p>La IA detecta automáticamente la categoría, cuenta y tipo de transacción</p>
+              </div>
+            </div>
+            <div class="ai-feature-item">
+              <div class="ai-check">✓</div>
+              <div>
+                <strong>Análisis predictivo</strong>
+                <p>Predice tus gastos futuros basándose en tus patrones históricos</p>
+              </div>
+            </div>
+          </div>
+          <a href="#download" class="btn-primary" id="ai-cta-btn">Probar ahora gratis →</a>
+        </div>
+        <div class="ai-visual">
+          <div class="ai-chat-demo">
+            <div class="chat-header">
+              <div class="chat-avatar">🤖</div>
+              <div>
+                <strong>EG Asist IA</strong>
+                <span class="online-dot"></span>
+              </div>
+            </div>
+            <div class="chat-messages">
+              <div class="chat-bubble user">
+                <p>"Gasté 45 dólares en el supermercado"</p>
+                <div class="bubble-mic">🎙️</div>
+              </div>
+              <div class="chat-bubble ai">
+                <div class="ai-response">
+                  <div class="ai-response-icon">✅</div>
+                  <div>
+                    <p><strong>Transacción registrada</strong></p>
+                    <div class="tx-preview">
+                      <span class="tx-p-cat">🛒 Supermercado</span>
+                      <span class="tx-p-amount">-$45.00</span>
+                    </div>
+                    <p class="ai-note">Categoría: Alimentación · Cuenta: Principal</p>
+                  </div>
+                </div>
+              </div>
+              <div class="chat-bubble user">
+                <p>"¿Cuánto gasté esta semana?"</p>
+              </div>
+              <div class="chat-bubble ai">
+                <div class="ai-response">
+                  <div class="ai-response-icon">📊</div>
+                  <div>
+                    <p><strong>Resumen semanal</strong></p>
+                    <p class="ai-note">Total gastos: $312.40<br/>Categoría top: Alimentación ($89.20)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="chat-input-bar">
+              <div class="chat-mic-btn">🎙️</div>
+              <span>Habla o escribe...</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DOWNLOAD SECTION ═══ -->
+  <section class="download-section" id="download">
+    <div class="section-container">
+      <div class="download-card">
+        <div class="download-content">
+          <span class="section-tag">Descarga Gratuita</span>
+          <h2 class="download-title">EG MobileMoney Asist</h2>
+          <p class="download-subtitle">Disponible para Android · Gratis · Sin publicidad</p>
+          
+          <div class="download-info-grid">
+            <div class="dl-info-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#00E676"><path d="M17 1.01 7 1c-1.1 0-2 .9-2 2v18c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V3c0-1.1-.9-1.99-2-1.99zM17 19H7V5h10v14z"/></svg>
+              <span>Android 7.0+</span>
+            </div>
+            <div class="dl-info-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#00E676"><path d="M20 6h-2.18c.07-.44.18-.87.18-1.33C18 2.55 15.45 0 12 0S6 2.55 6 4.67c0 .46.1.89.18 1.33H4c-1.11 0-1.99.89-1.99 2L2 20c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-8-4c1.34 0 2 1.1 2 1.67S13.34 5.33 12 5.33s-2-1.1-2-1.67S10.66 2 12 2zM12 13c-1.11 0-2-.89-2-2s.89-2 2-2 2 .89 2 2-.89 2-2 2zm4 7H8v-1.5c0-1.34 2.67-2 4-2s4 .66 4 2V20z"/></svg>
+              <span>Descarga directa</span>
+            </div>
+            <div class="dl-info-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="#00E676"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+              <span>100% seguro</span>
+            </div>
+          </div>
+
+          <div class="download-buttons">
+            <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/releases/latest/download/EG_MobileMoney_Asist.apk" 
+               class="btn-download-main" id="btn-download-apk">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M5 20h14v-2H5v2zm7-18L5.33 9h3.84v4h5.66V9h3.84L12 2z"/></svg>
+              Descargar APK
+              <span class="btn-version">v1.0.0</span>
+            </a>
+            <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/releases" 
+               target="_blank" class="btn-download-alt" id="btn-all-releases">
+              Ver todas las versiones
+            </a>
+          </div>
+
+          <p class="download-warning">
+            ⚠️ Al instalar, activa <strong>"Fuentes desconocidas"</strong> en Ajustes → Seguridad de tu dispositivo Android.
+          </p>
+        </div>
+
+        <!-- QR CODE SECTION -->
+        <div class="qr-section">
+          <div class="qr-wrapper">
+            <h3 class="qr-title">Escanea para descargar</h3>
+            <p class="qr-subtitle">Apunta tu cámara al código QR</p>
+            <div class="qr-container" id="qr-container">
+              <!-- QR generado dinámicamente por JS -->
+              <div class="qr-loading">Generando QR...</div>
+            </div>
+            <div class="qr-corners">
+              <div class="qr-corner tl"></div>
+              <div class="qr-corner tr"></div>
+              <div class="qr-corner bl"></div>
+              <div class="qr-corner br"></div>
+            </div>
+            <p class="qr-hint">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+              Enlace directo al APK más reciente
+            </p>
+          </div>
+          <div class="qr-instructions">
+            <div class="qr-step">
+              <div class="step-num">1</div>
+              <p>Abre la cámara de tu Android</p>
+            </div>
+            <div class="qr-step">
+              <div class="step-num">2</div>
+              <p>Apunta al código QR de arriba</p>
+            </div>
+            <div class="qr-step">
+              <div class="step-num">3</div>
+              <p>Toca el enlace que aparece</p>
+            </div>
+            <div class="qr-step">
+              <div class="step-num">4</div>
+              <p>¡Instala y disfruta!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ OPEN SOURCE SECTION ═══ -->
+  <section class="opensource-section" id="opensource">
+    <div class="section-container">
+      <div class="os-grid">
+        <div class="os-content">
+          <span class="section-tag">Open Source</span>
+          <h2 class="section-title">Código abierto, comunidad abierta</h2>
+          <p class="section-subtitle">EG MobileMoney Asist es 100% open source bajo licencia Apache 2.0. Contribuye, adapta o simplemente inspírate.</p>
+          <div class="github-card">
+            <div class="github-card-header">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+              <span>Tranquilino1/EGMobileMoneyAsist-AI-</span>
+            </div>
+            <p class="github-card-desc">App de finanzas personales open source con inteligencia artificial integrada</p>
+            <div class="github-card-stats">
+              <span>⭐ Stars</span>
+              <span>🍴 Forks</span>
+              <span>📄 Apache 2.0</span>
+            </div>
+            <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-" target="_blank" class="btn-github" id="btn-view-github">
+              Ver repositorio →
+            </a>
+          </div>
+        </div>
+        <div class="os-tech-stack">
+          <h3>Stack Tecnológico</h3>
+          <div class="tech-grid">
+            <div class="tech-item"><span class="tech-icon">🤖</span><span>Jetpack Compose</span></div>
+            <div class="tech-item"><span class="tech-icon">🧠</span><span>Gemini 1.5 Flash</span></div>
+            <div class="tech-item"><span class="tech-icon">💾</span><span>Room Database</span></div>
+            <div class="tech-item"><span class="tech-icon">🏗️</span><span>Clean Architecture</span></div>
+            <div class="tech-item"><span class="tech-icon">💉</span><span>Hilt DI</span></div>
+            <div class="tech-item"><span class="tech-icon">🔷</span><span>Kotlin Coroutines</span></div>
+            <div class="tech-item"><span class="tech-icon">🎙️</span><span>Android Audio API</span></div>
+            <div class="tech-item"><span class="tech-icon">📊</span><span>Multi-currency</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg width="36" height="36" viewBox="0 0 32 32" fill="none">
+            <rect width="32" height="32" rx="8" fill="url(#footerLogoGrad)"/>
+            <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" fill="white" font-size="13" font-weight="800" font-family="Inter">EG</text>
+            <defs>
+              <linearGradient id="footerLogoGrad" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#00E676"/>
+                <stop offset="1" stop-color="#00B248"/>
+              </linearGradient>
+            </defs>
+          </svg>
+          <span>EG MobileMoney Asist</span>
+        </div>
+        <p>Tu asistente financiero inteligente. Open source, gratuito y privado.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Proyecto</h4>
+          <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-" target="_blank">GitHub</a>
+          <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/releases" target="_blank">Releases</a>
+          <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/issues" target="_blank">Reportar bug</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/blob/main/LICENSE" target="_blank">Licencia Apache 2.0</a>
+          <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/blob/main/CODE_OF_CONDUCT.md" target="_blank">Código de conducta</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 EG MobileMoney Asist. Licenciado bajo Apache 2.0.</p>
+      <p>Hecho con ❤️ para la comunidad open source</p>
+    </div>
+  </footer>
+
+  <!-- Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSE1FgebvDmF+b5/uXX1rm0E8iFKPSRH2r6g==" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>

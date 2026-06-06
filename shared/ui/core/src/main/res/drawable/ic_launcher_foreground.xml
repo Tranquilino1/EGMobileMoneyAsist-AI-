@@ -1,0 +1,67 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- EG MobileMoney Asist Logo - Stylized dollar sign with mobile outline -->
+    
+    <!-- Mobile phone outline -->
+    <path
+        android:pathData="M38,22h32c3.31,0 6,2.69 6,6v52c0,3.31 -2.69,6 -6,6h-32c-3.31,0 -6,-2.69 -6,-6v-52c0,-3.31 2.69,-6 6,-6z"
+        android:fillColor="#FFFFFF"
+        android:strokeWidth="2"
+        android:strokeColor="#10B981"/>
+    
+    <!-- Phone screen area -->
+    <path
+        android:pathData="M36,30h36v42h-36z"
+        android:fillColor="#10B981"
+        android:fillAlpha="0.15"/>
+    
+    <!-- Dollar sign - vertical bar -->
+    <path
+        android:pathData="M53,35v38"
+        android:strokeWidth="3.5"
+        android:strokeColor="#10B981"
+        android:strokeLineCap="round"/>
+    
+    <!-- Dollar sign - S curve top -->
+    <path
+        android:pathData="M62,42c0,-4 -3,-7 -8,-7c-5,0 -9,3 -9,7c0,4 4,6 9,7"
+        android:strokeWidth="3.5"
+        android:strokeColor="#10B981"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    
+    <!-- Dollar sign - S curve bottom -->
+    <path
+        android:pathData="M45,56c0,4 3,7 8,7c5,0 9,-3 9,-7c0,-4 -4,-6 -9,-7"
+        android:strokeWidth="3.5"
+        android:strokeColor="#10B981"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    
+    <!-- Signal waves right -->
+    <path
+        android:pathData="M78,44c3,3 3,8 0,11"
+        android:strokeWidth="2"
+        android:strokeColor="#10B981"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+    <path
+        android:pathData="M83,40c5,5 5,15 0,20"
+        android:strokeWidth="2"
+        android:strokeColor="#10B981"
+        android:fillAlpha="0.6"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"/>
+    
+    <!-- Phone home button/notch -->
+    <path
+        android:pathData="M50,78h8"
+        android:strokeWidth="2.5"
+        android:strokeColor="#10B981"
+        android:strokeLineCap="round"/>
+</vector>
