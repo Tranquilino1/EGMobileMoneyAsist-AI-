@@ -251,6 +251,17 @@ document.addEventListener('DOMContentLoaded', () => {
   createParticles();
   setupCopyLink();
 
+  // ── Phone mockup screenshot slider ──
+  const phoneSlides = document.querySelectorAll('.phone-slider .slide-img');
+  if (phoneSlides.length > 0) {
+    let currentPhoneSlide = 0;
+    setInterval(() => {
+      phoneSlides[currentPhoneSlide].classList.remove('active');
+      currentPhoneSlide = (currentPhoneSlide + 1) % phoneSlides.length;
+      phoneSlides[currentPhoneSlide].classList.add('active');
+    }, 3500);
+  }
+
   // Animate stats on hero visible
   const statsObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
