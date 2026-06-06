@@ -80,8 +80,8 @@
             <li>
               <span class="bullet-icon">✕</span>
               <div>
-                <strong>Falta de automatización</strong>
-                <p>Pocas herramientas entienden el contexto semántico de un gasto sin que el usuario configure reglas manuales complejas.</p>
+                <strong>Falta de automatización y contexto local</strong>
+                <p>Pocas herramientas entienden el contexto semántico y operan nativamente en monedas locales como el **XAF (Franco CFA)**.</p>
               </div>
             </li>
           </ul>
@@ -224,7 +224,7 @@
       </div>
     </section>
 
-    <!-- Diapositiva 6: Privacidad y Offline-First -->
+    <!-- Diapositiva 6: Persistencia Local y Privacidad -->
     <section class="slide" id="slide-6">
       <div class="slide-top">
         <span class="slide-tag">Seguridad</span>
@@ -287,19 +287,67 @@
       </div>
     </section>
 
-    <!-- Diapositiva 8: Descarga y Código Abierto -->
+    <!-- Diapositiva 8: Integración de Gemini AI y JSON Riguroso -->
     <section class="slide" id="slide-8">
       <div class="slide-top">
+        <span class="slide-tag">Inteligencia Artificial</span>
+        <h2 class="slide-title">Extracción de datos con Gemini 1.5 Flash</h2>
+      </div>
+      <div class="slide-body">
+        <div class="content-left">
+          <p class="description-text">La app obliga a la IA a responder bajo un esquema JSON rígido y estricto utilizando instrucciones del sistema especializadas:</p>
+          <ul class="bullet-list">
+            <li>
+              <span class="bullet-icon">✦</span>
+              <div>
+                <strong>Ingeniería de Prompts</strong>
+                <p>Prompt estructurado para omitir texto conversacional de la IA y limitar respuestas a un formato de datos puro.</p>
+              </div>
+            </li>
+            <li>
+              <span class="bullet-icon">✦</span>
+              <div>
+                <strong>Categorización Automática</strong>
+                <p>Gemini asocia la intención del usuario con las categorías de Room DB (Alimentación, Transporte, Ocio, etc.).</p>
+              </div>
+            </li>
+            <li>
+              <span class="bullet-icon">✦</span>
+              <div>
+                <strong>Inferencia de Moneda</strong>
+                <p>Conversión semántica inmediata a **XAF** para asegurar el registro financiero local correcto.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="content-right">
+          <div class="glass-card" style="font-family: monospace; font-size: 0.75rem; border-color: var(--border-active); max-width: 320px;">
+            <span style="color: var(--accent-cyan);">// JSON Estructurado extraído</span><br>
+            {<br>
+            &nbsp;&nbsp;"amount": <span style="color: var(--accent-emerald);">5000</span>,<br>
+            &nbsp;&nbsp;"currency": <span style="color: var(--accent-emerald);">"XAF"</span>,<br>
+            &nbsp;&nbsp;"category": <span style="color: var(--accent-emerald);">"Alimentación"</span>,<br>
+            &nbsp;&nbsp;"type": <span style="color: var(--accent-emerald);">"EXPENSE"</span>,<br>
+            &nbsp;&nbsp;"description": <span style="color: var(--accent-emerald);">"Supermercado"</span><br>
+            }
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diapositiva 9: Descarga y Conclusión del Hackathon -->
+    <section class="slide" id="slide-9">
+      <div class="slide-top">
         <span class="slide-tag">Lanzamiento</span>
-        <h2 class="slide-title">Descarga directa y código fuente</h2>
+        <h2 class="slide-title">Conclusiones del Hackathon y Descarga</h2>
       </div>
       <div class="slide-body">
         <div class="dl-deck-wrapper">
           <div class="dl-text-col">
-            <p class="description-text" style="margin-bottom: 16px;">EG Mobile Money Assist está listo para usarse. Puedes descargar el APK o explorar el código fuente en GitHub:</p>
-            <ul class="bullet-list" style="margin-bottom: 24px;">
-              <li><span class="bullet-icon">★</span> 100% gratuito y libre de anuncios.</li>
-              <li><span class="bullet-icon">★</span> Contribuye al repositorio reportando issues o subiendo código.</li>
+            <p class="description-text" style="margin-bottom: 12px;">**EG Mobile Money Assist** demuestra la viabilidad de implementar una solución de inteligencia artificial offline-first móvil en solo 24 horas:</p>
+            <ul class="bullet-list" style="margin-bottom: 20px; font-size: 0.85rem;">
+              <li><span class="bullet-icon">★</span> 100% nativa y optimizada para Guinea Ecuatorial (XAF).</li>
+              <li><span class="bullet-icon">★</span> Proyecto representante de la **AAUCA** en el **Hackathon FP Salesianos**.</li>
             </ul>
             <a href="https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/releases/latest/download/EG_MobileMoney_Asist.apk" class="dl-btn" id="ppt-download-btn">
               📥 Descargar APK (v1.0.0)
@@ -327,7 +375,7 @@
     
     <div class="deck-navigation">
       <button class="nav-btn" id="btnPrev" disabled>←</button>
-      <span class="slide-counter" id="slideCounter">1 / 8</span>
+      <span class="slide-counter" id="slideCounter">1 / 9</span>
       <button class="nav-btn" id="btnNext">→</button>
     </div>
   </footer>
