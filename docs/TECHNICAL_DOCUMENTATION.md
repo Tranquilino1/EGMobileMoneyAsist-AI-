@@ -2,7 +2,9 @@
 
 ## EG Mobile Money Assist
 
-**Autor:** Tranquilino  
+**Autor:** Tranquilino Mba Ncogo Andeme  
+**Representación:** Universidad Afro-Americana de África Central (AAUCA)  
+**Contexto de Desarrollo:** Hackathon de 24 Horas de FP Salesianos  
 **Fecha:** Junio 2026  
 **Versión:** 1.0.0  
 **Licencia:** Apache 2.0  
@@ -13,6 +15,8 @@
 
 **EG Mobile Money Assist** es una aplicación Android nativa diseñada para revolucionar la gestión de finanzas personales. Al integrar inteligencia artificial directamente con el control de presupuesto local, la aplicación permite a los usuarios registrar transacciones financieras de forma conversacional utilizando comandos de voz en lenguaje natural.
 
+Este proyecto ha sido desarrollado en el marco del **Hackathon de 24 Horas organizado por FP Salesianos**, como proyecto representante de la **Universidad Afro-Americana de África Central (AAUCA)** por el participante **Tranquilino Mba Ncogo Andeme**.
+
 ### Objetivos Clave:
 - **Interactividad Inteligente**: Permitir el registro de transacciones complejas en segundos sin necesidad de navegar por menús y formularios extensos.
 - **Privacidad Absoluta (Offline-First)**: Almacenar toda la información financiera confidencial a nivel local (SQLite/Room), garantizando la soberanía de los datos del usuario.
@@ -22,7 +26,7 @@
 
 ## 2. Arquitectura del Sistema
 
-La aplicación está construida siguiendo los principios de **Clean Architecture** estructurada en capas y el patrón de presentación **MVVM (Model-View-ViewModel)**. Esto asegura que el código sea testeable, mantenible y escalable.
+La aplicación está construida siguiendo los principios de **Clean Architecture** estructurada en capas y el patrón de presentación **MVVM (Model-View-ViewModel)**. Esto asegura que el código sea testeable, mantenible y scalable.
 
 ```
 ┌──────────────────────────────────────────────────────────┐

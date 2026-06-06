@@ -186,11 +186,12 @@ limitations under the License.
 ---
 
 <div align="center">
-
+ 
 ### ⭐ ¡Dale una estrella si te gusta el proyecto! ⭐
-
-Hecho con ❤️ por [Tranquilino1](https://github.com/Tranquilino1)
-
+ 
+Proyecto desarrollado en el **Hackathon de 24 Horas de FP Salesianos**  
+Participante representante de la **AAUCA**: **Tranquilino Mba Ncogo Andeme** ([Tranquilino1](https://github.com/Tranquilino1))
+ 
 [📲 Descargar](https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/releases/latest) · [🌐 Web](https://tranquilino1.github.io/EGMobileMoneyAsist-AI-/) · [🐛 Issues](https://github.com/Tranquilino1/EGMobileMoneyAsist-AI-/issues)
-
+ 
 </div>
